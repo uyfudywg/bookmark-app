@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+   <h2 class="bookHead">Bookmark</h2>
+    <div class= "content">
+     <h4 class="text-center title">Bookmark your favorite sites</h4>
+     <label for="sit-name" class="site">Site Name</label>
+     <input type="text" id="sit-name" class="form-control mt-2" placeholder="Bookmark Name">
+     <label for="url" class="site mt-2">Site URL</label>
+     <input type="text" id="url" class="form-control mt-2" placeholder="Website URL">
+     <div id="alert" class="alert d-none alert-danger  mt-2 mb-2 m-auto ">
+      URL Should start with (https://www.) then write the site name after 
+      that write the type of the entity like (.com)
+  </div>
+  <div class="m-auto">
+  <button type="button" id="btn" onclick="add()"  class="btn btn-primary mt-2 m-auto d-block ">Submit</button>
+  </div>
+  </div>
+  <table class="table ">
+  <thead class="">
+   <tr>
+    <th>Website Name</th>
+    <th>Visit</th>
+    <th>Delete</th>
+    </tr>
+      </thead>
+      <tbody id="table">
+      </tbody>
+    </table>
+</div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
