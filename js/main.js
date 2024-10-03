@@ -59,7 +59,6 @@ function displiy(){
     for(let i =0; i<containersit.length; i++){
         data +=`
         <tr class ="item">
-            <td>${[i+1]}</td>
             <td>${containersit[i].name}</td>
              <td><a href="${containersit[i].url}" class="btn btn-outline-primary ">Visit</a></td>
              <td ><button class="btn btn-outline-warning" onclick="setData(${i})">Update</button></td>
@@ -170,7 +169,6 @@ function displayFavorites() {
     for (let i = 0; i < favoriteData.length; i++) {
         data += `
         <tr class="item">
-            <td>${[i + 1]}</td>
             <td>${favoriteData[i].name}</td>
             <td><a href="${favoriteData[i].url}" class="btn btn-outline-primary">Visit</a></td>
             <td><button class="btn btn-outline-warning" onclick="setData(${i})">Update</button></td>
