@@ -150,7 +150,6 @@ function displayFiltered(searchValue) {
     for (let i = 0; i < filteredData.length; i++) {
         data += `
         <tr class="item">
-            <td>${[i + 1]}</td>
             <td>${filteredData[i].name}</td>
             <td><a href="${filteredData[i].url}" class="btn btn-outline-primary">Visit</a></td>
             <td><button class="btn btn-outline-warning" onclick="setData(${i})">Update</button></td>
